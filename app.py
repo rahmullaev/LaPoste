@@ -8,7 +8,7 @@ app = Flask(__name__)
 ua = UserAgent()
 
 # === Флаг переключения источника данных ===
-USE_LOCAL_DATA = True  # True = читать из data.json, False = с сайта La Poste
+USE_LOCAL_DATA = False  # True = читать из data.json, False = с сайта La Poste
 
 DATA_FILE = 'data.json'
 
