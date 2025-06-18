@@ -1,0 +1,108 @@
+[
+    {
+        "lang": "fr_FR",
+        "scope": "public",
+        "returnCode": 200,
+        "shipment": {
+            "idShip": "86503506522946O",
+            "systemOwner": 5,
+            "holder": 1,
+            "product": "Envoi",
+            "isFinal": false,
+            "entryDate": "2025-06-16T03:00:00+02:00",
+            "timeline": [
+                {
+                    "type": 1,
+                    "code": "EDRCOU",
+                    "longLabel": "",
+                    "country": "",
+                    "shortLabel": "Votre envoi est pris en charge par La Poste.",
+                    "id": 1,
+                    "date": "2025-06-16T03:00:00+02:00",
+                    "status": true
+                },
+                {
+                    "type": 1,
+                    "code": "ACHERI",
+                    "longLabel": "",
+                    "country": "",
+                    "shortLabel": "Votre envoi est trié sur la plateforme de départ.",
+                    "id": 2,
+                    "status": true
+                },
+                {
+                    "type": 1,
+                    "code": "",
+                    "longLabel": "",
+                    "country": "",
+                    "shortLabel": "",
+                    "id": 3,
+                    "status": false
+                },
+                {
+                    "type": 1,
+                    "code": "",
+                    "longLabel": "",
+                    "country": "",
+                    "shortLabel": "",
+                    "id": 4,
+                    "status": false
+                },
+                {
+                    "type": 1,
+                    "code": "",
+                    "longLabel": "",
+                    "country": "",
+                    "shortLabel": "",
+                    "id": 5,
+                    "status": false
+                }
+            ],
+            "productCode": "G3",
+            "event": [
+                {
+                    "code": "PC1",
+                    "type": "N",
+                    "group": "ACHERI",
+                    "label": "Votre envoi est trié sur sa plateforme de départ.",
+                    "date": "2025-06-16T18:40:33+02:00",
+                    "country": "FR",
+                    "order": 100
+                },
+                {
+                    "code": "DR1",
+                    "type": "N",
+                    "group": "EXPANN",
+                    "label": "La Poste est prête à prendre en charge votre envoi. Dès qu’il nous sera confié, vous pourrez suivre son trajet ici.",
+                    "date": "2025-06-16T13:47:45+02:00",
+                    "country": "FR",
+                    "order": 99
+                },
+                {
+                    "code": "PC1",
+                    "type": "N",
+                    "group": "EDRCOU",
+                    "label": "Votre envoi est pris en charge par La Poste.",
+                    "date": "2025-06-16T03:00:00+02:00",
+                    "country": "FR",
+                    "order": 98
+                }
+            ],
+            "contextData": {
+                "isParcelBack": false,
+                "customPaid": false,
+                "geographicCoverage": "NAT",
+                "deliveryMode": "Votre envoi sera livré à votre adresse.",
+                "deliveryPicto": 1,
+                "originCountry": "",
+                "arrivalCountry": "",
+                "checkCustoms": false,
+                "customCTA": "OFF",
+                "deliveryChoice": {
+                    "deliveryChoice": 0
+                }
+            },
+            "url": "https://www.laposte.fr/outils/suivre-vos-envois?code=86503506522946O"
+        }
+    }
+]

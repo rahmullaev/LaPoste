@@ -1,0 +1,5 @@
+Flask
+requests
+googletrans==4.0.0rc1
+fake-useragent
+gunicorn==23.0.0

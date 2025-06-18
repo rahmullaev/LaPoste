@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Отслеживание посылки</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-row">
+            <div class="left-block">
+                <h1>Отслеживание посылки La Poste</h1>
+                <form method="POST" class="track-form">
+                    <input type="text" name="track_number" placeholder="Введите трек-номер" value="{{ track_code }}"
+                        required autocomplete="off" />
+                    <button type="submit">Отследить</button>
+                </form>
+            </div>
+
+            <div class="right-block">
+                {% if track_code %}
+                <div class="current-track">
+                    <strong>Текущий трек-номер:</strong><br />
+                    {{ track_code }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <table class="events-table">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Статус (FR)</th>
+                </tr>
+            </thead>
+            <tbody id="events"></tbody> <!-- JS вставит строки -->
+        </table>
+
+        <script type="application/json" id="events-data">
+          {{ events|tojson }}
+        </script>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+
+    </div>
+</body>
+
+</html>
